@@ -1,0 +1,33 @@
+#include <stdio.h>
+	 main(){
+		int i,j,N;
+		int ps,esp,acmp=1,diagp;
+		printf("matriz NxN:");
+            scanf("%d",&N);
+          		int A[N][N];
+                
+				for(i=0;i<N;i++){
+                	for(j=0;j<N;j++){
+						printf("elemento:");
+						scanf("%d",&A[i][j]); 
+				
+        		}
+            }
+              	for(i=0;i<N;i++){
+              		for(j=0;j<N;j++){           			
+              			printf("|%d|",A[i][j]);
+				}
+					printf("\n");
+			}
+				for(i=0;i<N;i++){
+                	for(j=0;j<N;j++){
+                		if(i<j){
+						  esp=A[i][j];  
+						  esp*=ps;          	            			
+                			
+					}				
+				}			
+           }
+		printf("produto: %d",ps);
+			
+}
