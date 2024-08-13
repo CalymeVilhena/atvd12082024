@@ -1,0 +1,50 @@
+#include <stdio.h>
+	int main(void){
+		int i,j,N;	
+		int DiagP,me=0;
+		
+			
+			printf("matriz NxN:");
+            scanf("%d",&N);
+          		int A[N][N];
+                
+				for(i=0;i<N;i++){
+                	for(j=0;j<N;j++){
+						printf("elemento:");
+						scanf("%d",&A[i][j]); 
+				
+        		}
+            }
+              	for(i=0;i<N;i++){
+              		for(j=0;j<N;j++){           			
+              			printf("|%d|",A[i][j]);
+					  }
+					printf("\n");
+				  }
+                  
+             me=A[0][0];
+             
+				for(i=0;i<N;i++){
+					for(j=0;j<N;j++){
+						if(A[i][j]>me){
+					    	me=A[i][j];
+						}
+					}				
+				}
+			
+			printf("Maior elemento: %d\n",me);
+			
+				for(i=0;i<N;i++)
+					for(j=0;j<N;j++)										
+						if(i==j)
+						  A[i][j]*=me;	
+			
+			
+				for(i=0;i<N;i++){
+					for(j=0;j<N;j++){		
+						printf("|%d|",A[i][j]);							
+					}
+					printf("\n");
+				}		
+	
+   	 }
