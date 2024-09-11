@@ -1,0 +1,36 @@
+#include <stdio.h>
+	int main(){
+		int M[3][3];
+		int A,i,j,k;
+			
+			printf("Valor de A:");
+			scanf("%d",&A);
+				for(i=0;i<3;i++){
+					for(j=0;j<3;j++){
+						
+						printf("elementos:");
+						scanf("%d",&M[i][j]);					
+			}			
+		}
+		
+				for(i=0;i<3;i++){
+					for(j=0;j<3;j++){
+						printf("|%d|",M[i][j]);					
+					}
+					printf("\n");
+				}
+				int V[9];
+				
+				for(i=0;i<3;i++){
+					for(j=0;j<3;j++){
+						
+						V[k]=M[i][j]*A;
+						k++;
+						
+					}
+				}
+				printf("V=");
+				for(i=0;i<9;i++)
+					printf("|%d|",V[i]);
+						
+	}
